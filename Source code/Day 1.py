@@ -64,9 +64,3 @@ print("Số tiền phải trả cho phòng ban: ", so_tienPhongBanPhaiTra)
 # Số tiền còn lại: -146600.0
 # Số tiền phải trả cho phòng ban:  49200.0
 
-# Bài 1.2
-total_Question = int(input("Tổng số câu hỏi: "))
-incorrect_Answer = int(input("Số câu trả lời chưa đúng: "))
-
-# correct_Answer = total_Question - incorrect_Answer
-# accurracy = correct_Answer / total_Question * 10

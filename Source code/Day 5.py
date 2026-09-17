@@ -29,6 +29,20 @@ class Teacher(Person):
     def day_hoc(self):
         print(f"{self.name} is teaching.")
 
+    def greeting(self):
+        print(f"My name is {self.name}. Currently, I'm a teacher.")
+
+class RobotAI:
+    def __init__(self, ten):
+        self.ten = ten
+    
+    def lam_viec(self):
+        print(f"Robot {self.ten} đang hoạt động.")
+    
+class RobotHutBui(RobotAI):
+    def lam_viec(self):
+        print(f"Robot {self.ten} đang tự động hút bụi nhà cửa.")
+
 
 # Khởi tạo Object
 student1 = Student("Pham Thi Thi", "001")
@@ -50,4 +64,12 @@ bot1.tra_loi("Thời tiết hôm nay thế nào?")
 teacher = Teacher("John")
 teacher.day_hoc() # Output: John is teaching.
 teacher.greeting()  # Output: Hello, my name is John
+
+# Method ghi đè : lớp con có thể ghi đè method ở class cha
+teacher.greeting() # My name is John. Currently, I'm a teacher
+
+# EX4:
+robot = RobotHutBui("Xiaomi Bot")
+robot.lam_viec()
+# Robot Xiaomi Bot đang tự động hút bụi nhà cửa.
 
